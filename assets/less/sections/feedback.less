@@ -53,6 +53,12 @@
                         background-color: #FFFFFF;
                         border: 1px solid #E0E3EB;
                         border-radius: 4px;
+                        transition: all linear .1s;
+
+                        &:focus,
+                        &:hover {
+                            border-color: darken(#E0E3EB, 10);
+                        }
 
                         &::placeholder {
                             color: #A3AAC2;
@@ -80,6 +86,10 @@
 
                             &.placeholder {
                                 color: #A3AAC2;
+                            }
+
+                            &:hover {
+                                border-color: darken(#E0E3EB, 10);
                             }
                         }
 

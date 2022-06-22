@@ -1,0 +1,59 @@
+//main: ../style.less
+
+.aboutus-wrap {
+    position: relative;
+    height: 669px;
+    margin-bottom: 162px;
+
+
+    .picture {
+        width: 902px;
+        height: 669px;
+        box-shadow: 0px 20px 24px -4px rgba(17, 24, 39, 0.1), 0px 8px 8px -4px rgba(17, 24, 39, 0.04);
+        border-radius: 2px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .body {
+        position: absolute;
+        width: 488px;
+        min-height: 523px;
+        background-color: #2947A9;
+        box-shadow: 0px 20px 24px -4px rgba(17, 24, 39, 0.1), 0px 8px 8px -4px rgba(17, 24, 39, 0.04);
+        border-radius: 2px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        color: #fff;
+        padding: 50px 40px;
+        padding-right: 60px;
+
+        .section-title {
+            text-align: left;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 42px;
+            margin-bottom: 37px;
+        }
+
+        .content {
+            margin-bottom: 74px;
+
+            p {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 23px;
+
+                &:not(&:last-of-type) {
+                    padding-bottom: 20px;
+                }
+            }
+        }
+    }
+}

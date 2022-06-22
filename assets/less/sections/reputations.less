@@ -1,0 +1,31 @@
+//main: ../style.less
+
+.reputation-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(292px, 1fr));
+    column-gap: 78px;
+    justify-items: center;
+
+    .reputation {
+        width: 292px;
+        height: 197px;
+        padding: 20px;
+        border: 1px solid #E0E3EB;
+
+        &-icon {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+        }
+
+        &-title {
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        &-content {
+            font-size: 16px;
+            color: #858EAD;
+        }
+    }
+}

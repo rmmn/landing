@@ -1,0 +1,44 @@
+// main: ../style.less
+
+.button {
+    display: inline-block;
+    background-color: #2947A9;
+    border-radius: 2px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #fff;
+    text-decoration: none;
+    padding: 16px 39px;
+    border: none;
+    outline: none;
+    transition: all linear .3s;
+
+    &.secondary {
+        color: #2947A9;
+        background-color: #fff;
+        border: 2px solid #2947A9;
+
+        &:hover {
+            opacity: .9;
+            background-color: #fff;
+        }
+    }
+
+    &.outline {
+        color: #fff;
+        background-color: transparent;
+        border: 2px solid #fff;
+
+        &:hover {
+            opacity: .9;
+            background-color: #fff;
+            color: #2947A9;
+        }
+    }
+
+    &:hover {
+        background-color: lighten(#2947A9, .2);
+        transform: translateY(-1px);
+    }
+}

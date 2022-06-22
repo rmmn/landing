@@ -361,7 +361,7 @@
         });
 
         select_options.forEach((option, index) => {
-            option.addEventListener('click', function(e) {
+            option.addEventListener('click', e => {
                 e.preventDefault();
                 hidden_select.selectedIndex = index;
                 custom_select_selected.textContent = e.currentTarget.textContent;

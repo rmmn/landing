@@ -1,4 +1,4 @@
-// main: header.less
+// main: ../sections/header.less
 
 .hero {
     width: 100%;
@@ -18,7 +18,7 @@
             max-width: 556px;
             font-size: 72px;
             font-weight: 700;
-
+            line-height: 84px;
         }
 
         .featured {
@@ -107,6 +107,47 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 770px) {
+    .hero {
+        &-slide {
+            .hero-slide-title {
+                font-size: 46px;
+            }
+        }
+    }
+}
+
+@media (max-width: 506px) {
+    .hero {
+        &-slide {
+            padding: 50px 60px;
+
+            .hero-slide-title {
+                font-size: 36px;
+                line-height: 46px;
+                min-width: 100%;
+            }
+        }
+
+        .featured {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 390px) {
+    .hero {
+        &-slide {
+            align-items: flex-start;
+
+            .hero-slide-title {
+                font-size: 36px;
+                min-width: 100%;
             }
         }
     }

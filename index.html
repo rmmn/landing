@@ -20,7 +20,7 @@
                 <button class="button menu-button">
                     <span></span>
                 </button>
-                <ul class="nav-menu">
+                <nav class="nav-menu">
                     <li>
                         <a href="#" class="nav-link">Home</a>
                     </li>
@@ -36,7 +36,7 @@
                     <li>
                         <a href="#" class="nav-link active">Contact Us</a>
                     </li>
-                </ul>
+                </nav>
             </div>
         </nav>
 
@@ -392,9 +392,12 @@
             custom_select_selected = custom_select.querySelector('.custom-select-selected'),
             options_dropdown = custom_select.querySelector('.options-dropdown'),
             select_options = options_dropdown.querySelectorAll('.dropdown>a.custom-select-option'),
-            hidden_select = document.querySelector('.feedback-form>.form-grid>.row>.reason-select');
+            hidden_select = document.querySelector('.feedback-form>.form-grid>.row>.reason-select'),
+            nav_menu = document.querySelector('.nav-menu'),
+            nav_menu_button = document.querySelector('.menu-button');
         let zindex = 4,
-            isDropdownOpen = false;
+            isDropdownOpen = false,
+            isMenuOpen = false;
 
         //
         // Correctly ZIndex of badges
@@ -426,6 +429,16 @@
             });
         });
 
+        nav_menu_button.addEventListener('click', function() {
+            if (isMenuOpen = !isMenuOpen) {
+                nav_menu.classList.add('open');
+                this.classList.add('active');
+            } else {
+                nav_menu.classList.remove('open');
+                this.classList.remove('active');
+            }
+        })
+
         const openSelect = (el, is_open, callback = () => {}) => {
             if (is_open) {
                 el.animate([{
@@ -447,6 +460,7 @@
                 };
             }
         };
+
     })();
 </script>
 
